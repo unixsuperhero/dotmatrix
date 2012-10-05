@@ -291,6 +291,13 @@ gco () {
   fi
 }
 
+ff() {
+  # Author: Joshua Toyota (Unix Superhero)
+  # Description: Fuzzy Finder for Bash
+  # Examples on Wordpress: http://wp.me/p2MUFm-n
+  find . -type f | grep -i "$(echo "$1" | sed 's/./&.*/g')"
+}
+
 alias gap='git add -p'
 alias gb='git branch'
 alias gc='git commit -v'
