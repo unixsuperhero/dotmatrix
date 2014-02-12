@@ -41,7 +41,7 @@ endfunction
 if &grepprg ==# 'grep -n $* /dev/null'
   set grepprg=grep\ -rnH\ --exclude='.*.swp'\ --exclude='*~'\ --exclude='*.log'\ --exclude=tags\ $*\ /dev/null
 endif
-set list            " show trailing whiteshace and tabs
+"set list            " show trailing whiteshace and tabs
 if &statusline == ''
   set statusline=[%n]\ %<%.99f\ %h%w%m%r%{HTry('CapsLockStatusline')}%y%{HTry('rails#statusline')}%{HTry('fugitive#statusline')}%#ErrorMsg#%{HTry('SyntasticStatuslineFlag')}%*%=%-14.(%l,%c%V%)\ %P
 endif
