@@ -1,4 +1,4 @@
 FILES
+.vim/tmp/
 .vim/bundle
 .vim/tmp
-.gitignore
